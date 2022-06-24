@@ -1,0 +1,49 @@
+POST (add song):
+
+	On SEND:
+
+		title: 		<string(64)>
+		artist: 	<string(64)>
+		resource:	<string(256)>
+
+	On RECV:
+
+		On SUCCESS:
+		status:		201
+
+		On FAIL:
+		status:		500
+
+
+DELETE (remove song):
+
+	On SEND:
+
+		id:			<int>
+	
+	On RECV:
+
+		On SUCCESS:
+		status:		204
+
+		On FAIL:
+		status:		500
+
+
+GET (get songs):
+
+	On SEND:
+		
+		<null>
+
+	On RECV:
+
+		On SUCCESS:
+		For each song:
+			id: <id>
+				title: <title>
+				artist: <artist>
+
+		On FAIL:
+		status:		500
+

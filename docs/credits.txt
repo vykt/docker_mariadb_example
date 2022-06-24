@@ -1,0 +1,9 @@
+Due credit:
+
+MariaDB Docker Introduction:
+	Paris Nakita Kejser
+	https://youtu.be/LFSSS_wOFsg
+
+Python Connect MariaDB:
+	Discover Python
+	https://youtu.be/oDR7k66x-AU
