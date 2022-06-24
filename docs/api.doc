@@ -43,6 +43,7 @@ GET (get songs):
 			id: <id>
 				title: <title>
 				artist: <artist>
+				resource: <resource>
 
 		On FAIL:
 		status:		500
