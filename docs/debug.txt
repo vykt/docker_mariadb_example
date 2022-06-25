@@ -1,0 +1,7 @@
+Some debug commands:
+
+	sudo inspect [container_name] | grep IP
+
+	mysql -u root -p -h [ip]
+
+	curl -X POST -H "name: value" -H "name2: value2" [ip]:[port]
