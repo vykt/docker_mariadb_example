@@ -50,7 +50,7 @@ HTTP POST
 Takes:
 ```
 'title'		- string, max length of 64, song name.
-'artist'		- string, max length of 64, musician.
+'artist'	- string, max length of 64, musician.
 'resource'	- string, max length of 256, url to resource.
 ```
 
