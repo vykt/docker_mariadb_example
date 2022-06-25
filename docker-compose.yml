@@ -9,3 +9,13 @@ services:
       MYSQL_ROOT_PASSWORD: example_password
     volumes:
       - ./mariaDB_data:/var/lib/mysql
+  debian-flask-restapi:
+    image: debian-flask-restapi:bullseye
+    restart: unless-stopped
+    container_name: debian-flask-restapi_container
+    links:
+      - mariadb:db
+    expose:
+      - 5000
+    ports:
+      - 5001:5000

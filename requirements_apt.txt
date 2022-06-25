@@ -1,2 +1,2 @@
-curl=7.83.1
-python3-pip=22.1.1
+curl=7.74.0-1.3+deb11u1
+python3-pip=20.3.4-4+deb11u1

@@ -14,22 +14,21 @@ Interact with the database using this API
 '''
 
 # setup & constants
+database_host = "db"
+send_names = ["title", "artist", "resource"]
+send_names_log = ["access", "action", "resource"]
+
 app = Flask(__name__)
 api = Api(app)
 
 mariadb_conn = mariadb.connect(user="root",
                                password="example_password",
                                database="example_db",
-                               host="172.18.0.2",
+                               host=database_host,
                                port=3306)
 mariadb_cursor = mariadb_conn.cursor()
 mariadb_cursor.execute("SET FOREIGN_KEY_CHECKS=0")
 mariadb_conn.commit()
-
-
-database_host = "mariadb_container"
-send_names = ["title", "artist", "resource"]
-send_names_log = ["access", "action", "resource"]
 
 
 # define API functions
